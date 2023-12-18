@@ -1,0 +1,35 @@
+
+
+<Container>:
+    rows: 3
+    spacing: "20dp"
+    padding: ["10dp", "170dp", "10dp", "150dp"]
+
+    clas: clas
+    letter: letter
+    knop: knop
+    
+    MDTextField:
+        id: clas
+        multiline: False
+        input_type: 'number'
+        input_filter: 'int'
+        
+        hint_text: 'Введите класс'
+        
+    MDTextField:
+        id: letter
+        multiline: False
+        input_type: 'text' 
+        hint_text: 'Введите букву'
+    
+    MDRaisedButton:
+        id: knop
+        size_hint_x: 0.5
+        
+        text: 'Получить расписание'
+        on_release:
+            root.defence()
+
+
+    
